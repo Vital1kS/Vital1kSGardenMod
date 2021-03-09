@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "gardenmod:blocks/hazelnut_bush/leaves",
+		"1": "gardenmod:blocks/hazelnut_bush/log",
+		"2": "gardenmod:blocks/hazelnut_bush/log",
+		"particle": "hazelnut_bush/leaves"
+	},
+	"elements": [
+		{
+			"name": "foot",
+			"from": [7, 0, 7],
+			"to": [8, 1, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 8, 15]},
+			"faces": {
+				"north": {"uv": [3, 0, 4, 1], "texture": "#1"},
+				"east": {"uv": [2, 0, 3, 1], "texture": "#1"},
+				"south": {"uv": [2, 0, 3, 1], "texture": "#1"},
+				"west": {"uv": [1, 0, 2, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+				"down": {"uv": [9, 14, 10, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [6, 1, 6],
+			"to": [9, 4, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 9, 14]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 3], "texture": "#0"},
+				"south": {"uv": [0, 0, 3, 3], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 3], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#0"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#0"}
+			}
+		}
+	]
+}

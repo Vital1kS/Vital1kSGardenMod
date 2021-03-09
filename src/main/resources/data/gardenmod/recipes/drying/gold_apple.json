@@ -1,0 +1,10 @@
+{
+	"type": "gardenmod:drying",
+	"output": {
+		"item": "minecraft:apple"
+	},
+	
+	"input": {
+		"item": "minecraft:golden_apple"
+	}
+}

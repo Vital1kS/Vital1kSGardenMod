@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=north":  { "model": "gardenmod:block/drying_table/drying_table" },
+        "facing=east":   { "model": "gardenmod:block/drying_table/drying_table", "y": 90 },
+        "facing=south":   { "model": "gardenmod:block/drying_table/drying_table", "y": 180 },
+        "facing=west":   { "model": "gardenmod:block/drying_table/drying_table", "y": 270 }
+       } 
+    }
+}

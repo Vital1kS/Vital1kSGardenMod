@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: vital1ksgardenmod1.16.5
+Implementation-Version: 1.16.5-0.0.5
+Specification-Vendor: examplemodsareus
+Specification-Title: examplemod
+Implementation-Timestamp: 2020-10-31T20:59:15+0700
+Specification-Version: 1
+Implementation-Vendor: examplemodsareus
+
