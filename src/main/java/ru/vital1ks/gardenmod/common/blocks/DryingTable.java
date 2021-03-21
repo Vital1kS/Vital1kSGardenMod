@@ -1,6 +1,7 @@
 package ru.vital1ks.gardenmod.common.blocks;
 
 import java.util.Optional;
+import java.util.Random;
 
 import javax.annotation.Nullable;
 
@@ -82,13 +83,21 @@ public class DryingTable extends Block implements IWaterLoggable{
 		}
 	}
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+		if(player.isSneaking()) {
+			TileEntity tileentity = worldIn.getTileEntity(pos);
+			DryingTableTileEntity dryingtabletileentity = (DryingTableTileEntity)tileentity;
+			dryingtabletileentity.isHold = true;
+			dryingtabletileentity.takeItem(pos);
+		}
+		else {
 	      TileEntity tileentity = worldIn.getTileEntity(pos);
-	      int cookTime = 100;
+	      int cookTime = (int) (100 + Math.random()*5);
 	      if (tileentity instanceof DryingTableTileEntity) {
 	         DryingTableTileEntity dryingtabletileentity = (DryingTableTileEntity)tileentity;
 	         ItemStack itemstack = player.getHeldItem(handIn);
 	         dryingtabletileentity.addItem(itemstack, cookTime);
 	         return ActionResultType.CONSUME;
+	      }
 	      }
 
 	      return ActionResultType.PASS;

@@ -1,4 +1,8 @@
 {
+	//Items
 	"item.gardenmod.sprout": "Sprouts",
-	"item.gardenmod.hazelnut": "Hazelnut"
+	"item.gardenmod.hazelnut": "Hazelnut",
+	
+	//Blocks
+	"block.gardenmod.drying_table": "Drying Table"
 }

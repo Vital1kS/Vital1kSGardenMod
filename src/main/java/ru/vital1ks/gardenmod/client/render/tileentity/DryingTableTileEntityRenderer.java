@@ -18,8 +18,8 @@ import ru.vital1ks.gardenmod.common.tiles.DryingTableTileEntity;
 
 @OnlyIn(Dist.CLIENT)
 public class DryingTableTileEntityRenderer extends TileEntityRenderer<DryingTableTileEntity> {
-	public DryingTableTileEntityRenderer(TileEntityRendererDispatcher p_i226007_1_) {
-		super(p_i226007_1_);
+	public DryingTableTileEntityRenderer(TileEntityRendererDispatcher dryingdispatcher) {
+		super(dryingdispatcher);
 	}
 
 	public void render(DryingTableTileEntity tileEntityIn, float partialTicks, MatrixStack matrixStackIn,
@@ -48,7 +48,7 @@ public class DryingTableTileEntityRenderer extends TileEntityRenderer<DryingTabl
 						bufferIn);
 				matrixStackIn.pop();
 			}
-
+			
 		}
 
 	}
